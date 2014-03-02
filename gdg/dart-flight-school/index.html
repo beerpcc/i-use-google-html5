@@ -1,0 +1,328 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="fill nobackground" style="background-image: url(../dart-gdg-th/slide1.png)"></slide>
+  <slide>
+    <article>
+      <img src="../dart-gdg-th/slide2-0.png" style="width:100%;height:auto;margin-top:-40px;" alt="" title="">
+    </article>
+  </slide>
+  <slide>
+    <article>
+      <img src="../dart-gdg-th/slide2-1.png" style="width:100%;height:auto;margin-top:-40px;" alt="" title="">
+    </article>
+  </slide>
+  <slide>
+    <article>
+      <img src="../dart-gdg-th/slide2-1cloud.png" style="width:100%;height:auto;margin-top:-40px;" alt="" title="">
+    </article>
+  </slide>
+  <slide>
+    <article>
+      <img src="../dart-gdg-th/slide2-2.png" style="width:100%;height:auto;margin-top:-40px;" alt="" title="">
+    </article>
+  </slide>
+  <slide>
+    <article>
+      <img src="../dart-gdg-th/slide2-2iox.png" style="width:100%;height:auto;margin-top:-40px;" alt="" title="">
+    </article>
+  </slide>
+  <slide>
+    <sction class="vcenter flexbox">
+      <hgroup>
+        <h2><a href="http://goo.gl/OOfqVf" target="_self">http://goo.gl/OOfqVf</a></h2>
+      </hgroup>
+    </section>
+  </slide>
+  <slide>
+    <article>
+      <img src="../dart-gdg-th/slidespeaker.png" style="width:100%;height:auto;margin-top:-40px;" alt="" title="">
+    </article>
+  </slide>
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="suthat/dart-flight-school.png" style="width:383px;height:138px;"></span>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(suthat/google-fiber.png)"></slide>
+  <slide class="fill nobackground" style="background-image: url(suthat/google-fiber-source.png)"></slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <hgroup>
+        <h2>CPE</h2>
+      </hgroup>
+    </section>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>AngularJS 101</h2>
+    </hgroup>
+    <article>
+      <div class="flexbox vcenter" style="margin-bottom:40px;">
+        <img src="suthat/angularjs.png">
+      </div>
+      <ul>
+        <li>HTML enhanced for web apps! => http://angularjs.org</li>
+        <li>A javascript framework</li>
+        <li>Plain javascript</li>
+        <li>Static vs. (dynamic vs. extensibility)</li>
+        <li>MV* => MVW</li>
+        <li>2 ways data binding => SPA-ready</li>
+        <li>Dependency injection</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Agendar (60minutes)</h2>
+    </hgroup>
+    <article>
+      <div class="flexbox" style="margin-bottom:40px;">
+        <img src="suthat/angularjs-small.png">
+      </div>
+      <ul>
+        <li>Directives</li>
+        <li>Filters</li>
+        <li>Controllers &amp; $scope</li>
+        <li>Modules</li>
+        <li>$http &amp; Local storages</li>
+        <li>Animation</li>
+        <li>AngularJS + Dart = AngularDart</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <div>
+          <img src="suthat/angularjs-small.png">
+      </div>
+      <hgroup>
+        <h2>Directive</h2>
+      </hgroup>
+    </section>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <div>
+          <img src="suthat/angularjs-small.png">
+      </div>
+      <hgroup>
+        <h2>1 + 1 = 2</h2>
+      </hgroup>
+    </section>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <hgroup style="margin-bottom:20px;">
+        <h2 ng-app ng-init="num1=1;num2=1;">
+          <input type="number" ng-model="num1" style="width:85px;font-size:50px;"> + 
+          <input type="number" ng-model="num2" style="width:85px;font-size:50px;"> =
+          {{num1 + num2}}
+        </h2>
+      </hgroup>
+      <pre class="prettyprint" data-lang="html">
+        &lt;h1 <b>ng-app</b>&gt;
+          &lt;input type="number" <b>ng-model="num1"</b>&gt; + 
+          &lt;input type="number" <b>ng-model="num2"</b>&gt; =
+          <b>{{ num1 + num2 }}</b>
+        &lt;/h1&gt;
+        &lt;<b>script src="angular.min.js"&gt;&lt;/script</b>&gt;
+      </pre>
+    </section>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <hgroup style="margin-bottom:20px;">
+        <h2>Filters</h2>
+      </hgroup>
+      <pre class="prettyprint" data-lang="html">
+        &lt;input type="text" <b>ng-model="inputText"</b>&gt;
+        &lt;ul class="list"&gt;
+          &lt;li <b>ng-repeat="user in users | filter:inputText"</b>&gt;
+            {{ <b>user.name | uppercase</b> }}
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      </pre>
+    </section>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <hgroup>
+        <h2>Controller &amp; $scope</h2>
+      </hgroup>
+      <div>
+          <img src="suthat/view-scope-controller.png">
+      </div>
+      <pre class="prettyprint" data-lang="html">
+        &lt;div <b>ng-controller="SimpleController"</b>&gt; 
+          <b>{{name}}</b>
+          &lt;a <b>ng-click="changeName()"</b>&gt;Change&lt;/a&gt; 
+        &lt;/div&gt;
+        &lt;script&gt;
+          function <b>SimpleController($scope)</b>{
+            <b>$scope.name = 'John Doe';</b>
+            <b>$scope.changeName = function() { ... };</b>
+          }
+        &lt;/script&gt;
+      </pre>
+    </section>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <hgroup>
+        <h2>Module</h2>
+      </hgroup>
+      <div>
+          <img src="suthat/module.png">
+      </div>
+      <pre class="prettyprint" data-lang="html">
+        &lt;html <b>ng-app="SimpleModule"</b>&gt;
+          ...
+        &lt;/html&gt;
+      </pre>
+    </section>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <hgroup>
+        <h2>SPA</h2>
+      </hgroup>
+      <div>
+          <img src="suthat/spa.png">
+      </div>
+    </section>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>AngularDart</h2>
+      <h3>Superheroic MVW Framework for Dart</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>AgendarJS + Dart</h2>
+    </hgroup>
+    <article>
+      <div class="flexbox vcenter" style="margin-bottom:40px;">
+        <img src="suthat/angulardart.png">
+      </div>
+      <ul>
+        <li>AngularJS and Dart are similar concepts</li>
+        <li>But have some big differences in implementation</li>
+        <li>(NG) Expression javacript for build dynamic MVC web app</li>
+        <li>(Dart) New language (class-based, C-style, OOP) for building scalable web app</li>
+        <li>Angular+Dart NOT Angular VS. Dart</li>
+        <li>Develop rich UIs, RT apps with OO  (clean and efficient)</li>
+        <li><b>Develop extendable and scalable web</b></li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <sction class="vcenter flexbox">
+      <div>
+          <img src="suthat/angulardart-small.png">
+      </div>
+      <hgroup>
+        <h2>V &lt;===&gt; MC</h2>
+      </hgroup>
+    </section>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>It works</h2>
+    </hgroup>
+    <article>
+      <div class="flexbox" style="margin-bottom:40px;">
+        <img src="suthat/angulardart-small.png">
+      </div>
+      <ul>
+        <li>ngBootstrap</li>
+        <li>NgController</li>
+        <li>Module</li>
+        <li>NgDirective</li>
+        <li>NgFilter</li>
+        <li>NgComponent</li>
+        <li>Etc.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>&lt;Thank You!&gt;</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="suthat/dart-flight-school.png" style="width:383px;height:138px;"></span>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+<script src="suthat/angular.min.js"></script> 
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
